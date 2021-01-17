@@ -58,6 +58,8 @@ function draw() {
   rectMode(CENTER);
   background(0);
   Engine.update(engine);
+
+  keyPressed()
   
   drawSprites();
   //Create the display here
@@ -114,6 +116,12 @@ function mouseDragged(){
 function mouseReleased(){
   chain.fly();
   gameState = "launched";
+  
 }
 
-
+function keyPressed(){
+  if(keyCode === 32){
+   chain.attach(polygon.body); 
+   gameState = "slingshot";
+  }
+}

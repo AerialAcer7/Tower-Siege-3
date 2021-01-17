@@ -9,7 +9,7 @@ class Chain{
         this.body = Matter.Constraint.create(options);
         World.add(world,this.body);
  }
- attach(){
+ attach(body){
     this.body.bodyA = body;
 }
 
