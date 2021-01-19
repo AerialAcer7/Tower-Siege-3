@@ -5,7 +5,7 @@ class Box{
      friction:0.0,
     //isStatic: false
    } 
-   this.body = Bodies.rectangle(x,y,width,height);
+   this.body = Bodies.rectangle(x,y,width,height,options);
    World.add(world,this.body);
    this.width = width;
    this.height = height;
@@ -31,5 +31,11 @@ class Box{
      this.visibility = this.visibility-5;
      pop();
     }
+  }
+
+  score(){
+   if(this.visibility<0 && this.visibility>-105){
+    score = score+1; 
+   } 
   }
 }

@@ -4,6 +4,7 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 var gameState = "slingshot";
+var score = 0;
 
 function setup() {
 	createCanvas(800, 700);
@@ -59,7 +60,44 @@ function draw() {
   background(0);
   Engine.update(engine);
 
-  keyPressed()
+//score function
+ fill(255);
+ text("SCORE:"+score,700,50);
+
+ box1.score();
+ box2.score();
+ box3.score();
+ box4.score();
+ box5.score();
+ box6.score();
+ box7.score();
+ box8.score();
+ box9.score();
+ box10.score();
+ box11.score();
+ box12.score();
+ box13.score();
+ box14.score();
+ box15.score();
+ box16.score();
+ box17.score();
+ box18.score();
+ box19.score();
+ box20.score();
+ box21.score();
+ box22.score();
+ box23.score();
+ box24.score();
+ box25.score();
+ box26.score();
+ box27.score();
+ box28.score();
+ box29.score();
+ box30.score();
+ box31.score();
+ box32.score();
+
+  keyPressed();
   
   drawSprites();
   //Create the display here
